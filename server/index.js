@@ -26,10 +26,12 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: [
+            "http://localhost:3000", 
+            "https://studynotion-frontend-ecru.vercel.app"
+        ],
         credentials: true,
     })
-
 );
 
 app.use(
